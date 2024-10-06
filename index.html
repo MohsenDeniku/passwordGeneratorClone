@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div id="header">
+            <h1>Generate a</h1>
+            <h1 id="random-password-txt">random password</h1>
+            <p id="info-txt">Never use an insecure password again.</p>
+        </div>
+        <div id="switches-container">
+            <div class="switch-container">
+                <input type="checkbox" id="add-numbers" onclick="turnTexts()">
+                <label for="add-numbers" class="switch-btn" ></label>
+                <p class="switch-p" id="numbers-p">Numbers</p>
+            </div>
+            <div class="switch-container">
+                <input type="checkbox" id="add-symbols" onclick="turnTexts()">
+                <label for="add-symbols" class="switch-btn" ></label>
+                <p class="switch-p" id="symbols-p">Symbols</p>
+
+            </div>
+            <div class="switch-container">
+                <input value="10" min="6" max="36" type="number" id="password-length">
+                <p class="switch-p" id="length-p">Enter the length</p>
+            </div>
+        </div>
+        
+        <button id="generate-password-btn">Generate passwords</button>
+        <hr>
+        <div class="passwords-container">
+            <div class="password-field" id="first-password-el"></div>
+            <div class="password-field" id="second-password-el"></div>
+        </div>
+    </div>
+    <p id="footer">Developed by <a href="https://www.linkedin.com/in/mohsen-deniku" target="_blank">Mohsen Deniku</a>.</p>
+    <script src="./index.js"></script>
+</body>
+</html>
